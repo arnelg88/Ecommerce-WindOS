@@ -1,0 +1,17 @@
+body{
+    color: rgb(20, 19, 19);
+}
+
+.card-wrapper {
+    display: flex;
+    gap: 10px;
+  }
+  
+
+  .layout {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  
+    justify-content: center;
+  }
