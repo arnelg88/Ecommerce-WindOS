@@ -12,6 +12,21 @@ body{
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .layoutDetail {
+    width: 100%;
+  
+    display: flex;
+    gap: 16px;
   
     justify-content: center;
+  }
+
+  .containerCard{
+    height: 340px;
+    width: 760px;
+    border: solid rgb(168, 168, 168) 1px;
+    border-radius: 15px;
   }

@@ -1,8 +1,9 @@
 import React from 'react';
 import './Main.css'; 
-import CardProducts from '../../Tools/CardProducts/CardProducts';
 import { useParams } from 'react-router-dom';
 import productsData from '../../Source/Data/data.json';
+import { ItemDetail } from '../../Tools/CardDetailProduct/ItemDetail';
+
 
 const ItemDetailContainer = ({ message }) => {
   const { id } = useParams();
@@ -14,16 +15,10 @@ const ItemDetailContainer = ({ message }) => {
 
   return (
     <main className="main-content">
-      <h1>{message}</h1>
-      <section className='layout'>
-        <div>
-          <CardProducts 
-            id={product.id}
-            title={product.title}
-            description={product.description}
-            price={product.price}
-            image={product.image}
-          />
+      <h3>{message}</h3>
+      <section className='layoutDetail'>
+        <div className="containerCard" >
+        <ItemDetail/>
         </div>
       </section>
     </main>
