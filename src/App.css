@@ -24,7 +24,7 @@ html, body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("src/assets/Components/Source/img/beams-home@95.jpg");
+    background-image: url(https://previews.dropbox.com/p/thumb/ACVrfz88M8d3JfhmCwhkpy8gLlZhYTzypjZFpKXGX098aLtrC4MoBRhda-Y0f7q_iB74IxC3QwCTsrvZyGzMAceJD4HKp8-zEHUX5JvzAlVCwvHCSjqzfwiueSjvnIkpfLVE39IZhr6YLFdgiQFERJPNDdNliV9B7UgocK5zroASiXW9UT3tCdsmjyL3wuMnry2SqMduhMeS2WgOKQG0JfDESNkdL0dCAfij6tgWcwnEQQJWViTUcclwot9nsyHqxx27MXtUHb0wXRjcbqCgxq57IrbC82ochk0r7PFdi1ecDdSlVr6l6XHT1ez6NfAbTEoi8WGCSSAnQ34oXYt63G-z/p.jpeg?is_prewarmed=true);
     background-size: cover;
     z-index: -1;
     background-position: center;
