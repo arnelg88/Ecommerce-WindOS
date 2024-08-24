@@ -1,28 +1,37 @@
-import './ItemDetail.css'; 
+import React, { useState } from 'react';
+import './ItemDetail.css';
 import HoverRating from '../Rating/Rating';
 import { ItemQuantifySelector } from '../ItemQuantifySelector/ItemQuantifySelector';
-import { AddItemButton } from '../AddItemButton/AddItemButton';
+import AddItemButton from '../AddItemButton/AddItemButton';
+import { useCart } from '../../Elements/Main/CartContext/CartContext';
 
-export const ItemDetail = () =>(
-    <>
+export const ItemDetail = ({ id, imageSrc, title, description, price, stock }) => {
+  const [quantity, setQuantity] = useState(1);
+  const { addItemToCart } = useCart();
+
+  const product = { id, title, description, price };
+
+  const handleAddToCart = () => {
+    addItemToCart(product, quantity);
+  };
+
+  return (
     <section className="layoutContainer">
-          <div>
-            <img className='imgContainer' src="https://samsungar.vtexassets.com/arquivos/ids/193728-800-auto?width=800&height=auto&aspect=true" alt="" />
-            </div>
-          <div class="grow1">
-            <h3>Title</h3>
-            <div>
-            <HoverRating />
-            </div>
-            <span className='SpanInfo'>Description</span>
-            <span className='SpanInfo'>Price: </span>
-            <div>
-              <ItemQuantifySelector/>
-            </div>
-            <div className='center'>
-            <AddItemButton />
-            </div>
-          </div>
-        </section>
-    </>
-);
+      <div>
+        <img className='imgContainer' src={imageSrc} alt={title} />
+      </div>
+      <div className="grow1">
+        <h3>{title}</h3>
+        <HoverRating />
+        <span className='SpanInfo'>{description}</span>
+        <span className='SpanInfo'>Price: {price}</span>
+        <div>
+          <ItemQuantifySelector quantity={quantity} setQuantity={setQuantity} stock={stock} />
+        </div>
+        <div className='center'>
+          <AddItemButton onClick={handleAddToCart} />
+        </div>
+      </div>
+    </section>
+  );
+};

@@ -11,10 +11,10 @@ export default function PositionedMenu({ setCategory }) {
     setAnchorEl(event.currentTarget);
   };
 
-  const handleClose = (category) => {
+  const handleClose = (categoryId) => {
     setAnchorEl(null);
-    if (category) {
-      setCategory(category);
+    if (categoryId) {
+      setCategory(categoryId);
     }
   };
 
@@ -44,8 +44,8 @@ export default function PositionedMenu({ setCategory }) {
           horizontal: 'left',
         }}
       >
-        <MenuItem onClick={() => handleClose('NoteBook')}>NoteBooks</MenuItem>
-        <MenuItem onClick={() => handleClose('SmartPhone')}>SmartPhones</MenuItem>
+        <MenuItem onClick={() => handleClose('notebook')}>NoteBooks</MenuItem>
+        <MenuItem onClick={() => handleClose('smartphone')}>SmartPhones</MenuItem>
       </Menu>
     </div>
   );

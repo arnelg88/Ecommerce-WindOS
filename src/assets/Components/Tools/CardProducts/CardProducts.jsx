@@ -2,9 +2,9 @@ import React from 'react';
 import './CardProducts.css';
 import FlexDivider from '../Divider/Divider';
 import { Link } from 'react-router-dom';
-import { ArrowRightIcon } from '@radix-ui/react-icons'
+import { ArrowRightIcon } from '@radix-ui/react-icons';
 
-export default function CardProducts({ id, title, description, price, image }) {
+export default function CardProducts ({ id, title, description, price, image }) {
   return (
     <div className="card-container">
       <div className="card">

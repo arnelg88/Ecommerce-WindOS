@@ -6,7 +6,7 @@
 }
 
 .card {
-  width: 300px; /* Ajusta el tamaño según sea necesario */
+  width: 300px;
   border: 1px solid #ccc;
   border-radius: 8px;
   overflow: hidden;
@@ -38,7 +38,6 @@
   }
   
   .card-img {
-      /* clear and add new css */
     transition: all 0.5s;
     display: flex;
     justify-content: center;

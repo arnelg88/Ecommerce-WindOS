@@ -1,15 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-export const ItemQuantifySelector = () => {
-
-  const [quantity, setQuantity] = useState(0);
+export const ItemQuantifySelector = ({ quantity, setQuantity, stock }) => {
 
   const increaseQuantity = () => {
-    setQuantity(prevQuantity => prevQuantity + 1);
+    setQuantity(prevQuantity => {
+      if (prevQuantity < stock) {
+        return prevQuantity + 1;
+      } else {
+        return prevQuantity; 
+      }
+    });
   };
 
   const decreaseQuantity = () => {
-    setQuantity(prevQuantity => (prevQuantity > 0 ? prevQuantity - 1 : 0));
+    setQuantity(prevQuantity => (prevQuantity > 1 ? prevQuantity - 1 : 1));
   };
 
   return (
@@ -17,6 +21,7 @@ export const ItemQuantifySelector = () => {
       <button className='quantity' onClick={decreaseQuantity}>-</button>
       <span className='quantity'>{quantity}</span>
       <button className='quantity' onClick={increaseQuantity}>+</button>
+      <p>Stock disponible: {stock}</p>
     </>
   );
 };

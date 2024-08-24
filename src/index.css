@@ -42,3 +42,30 @@ body::-webkit-scrollbar-thumb {
                      var(--sb-track-color);
   }
 }
+
+
+.grow12{
+  flex-grow: 1; 
+  margin-top: 25px;
+}
+
+.bill{
+  height:80px;
+  float: right;
+}
+
+.ContainerCheckout{
+  border: solid rgba(159, 158, 158, 0.587) 1px;
+  padding: 10px;
+  border-radius: 15px;
+  background: #ffffff71;
+}
+
+.RemoveItem{
+  cursor: pointer;
+}
+.RemoveItem:hover{
+  text-decoration: underline;
+  color: rgb(125, 125, 226);
+
+}

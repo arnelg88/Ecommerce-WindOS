@@ -4,6 +4,7 @@ import NavBar from './assets/Components/Elements/NavBar/NavBar';
 import './App.css';
 import ItemListContainer from './assets/Components/Elements/Main/ItemListContainer';
 import ItemDetailContainer from './assets/Components/Elements/Main/ItemDetailContainer';
+import { Checkout } from './assets/Components/Elements/Checkout/Checkout';
 
 function App() {
   const [category, setCategory] = useState('');
@@ -17,6 +18,7 @@ function App() {
             <Route path="/" element={<ItemListContainer category={category} />} />
             <Route path="/category/:categoryId" element={<ItemListContainer message="Tienda de equipos" />} />
             <Route path="/item/:id" element={<ItemDetailContainer message="Detalles del producto" />} />
+            <Route path="/checkout" element={<Checkout />} />
             <Route path="*" element={<div>404 - Página no encontrada</div>} />
           </Routes>
         </div>

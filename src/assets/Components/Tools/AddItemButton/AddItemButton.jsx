@@ -1,7 +1,12 @@
+import React from 'react';
 import { ShoppingCart } from '@mui/icons-material';
 
-export const AddItemButton = () => (
-    <>
-      <button className='AddCart'><ShoppingCart/></button>
-    </>
-)
+const AddItemButton = ({ onClick }) => (
+  <>
+    <button className='AddCart' onClick={onClick}>
+      <ShoppingCart />
+    </button>
+  </>
+);
+
+export default AddItemButton;

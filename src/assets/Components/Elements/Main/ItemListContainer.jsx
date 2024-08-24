@@ -1,45 +1,49 @@
 import React, { useEffect, useState } from 'react';
-import './Main.css'; 
 import CardProducts from '../../Tools/CardProducts/CardProducts';
-import productsData from '../../Source/Data/data.json'; 
+import { db } from '../../Source/Data/firebaseConfig';
+import { collection, getDocs, query, where } from 'firebase/firestore';
 
-const ItemListContainer = ({ message, category }) => {
+const ItemListContainer = ({ category }) => {
   const [items, setItems] = useState([]);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    new Promise((resolve) => {
-      setTimeout(() => resolve(productsData), 2000);
-    })
-      .then((response) => {
+    const fetchItems = async () => {
+      try {
+        const itemsCollection = collection(db, "items");
+        
+        let q;
         if (category) {
-          return response.filter(item => item.description.toLowerCase().includes(category.toLowerCase()));
+          q = query(itemsCollection, where("categoryId", "==", category));
+        } else {
+          q = itemsCollection;
         }
-        return response;
-      })
-      .then((filteredItems) => {
-        setItems(filteredItems);
-        setLoading(false);
-      })
-      .catch((error) => console.error('Error fetching data:', error));
-  }, [category]);
 
-  if (loading) return "Loading...";
+        const querySnapshot = await getDocs(q);
+        const itemsArray = querySnapshot.docs.map(doc => ({
+          id: doc.id, ...doc.data()
+        }));
+        setItems(itemsArray);
+      } catch (error) {
+        console.error("Error fetching items: ", error);
+      }
+    };
+
+    fetchItems();
+  }, [category]);
 
   return (
     <main className="main-content">
-      <h1>{message}</h1>
+      <h1>Tienda</h1>
       <section className='layout'>
-        {items.map((item) => (
-          <div key={item.id} className="card-wrapper">
-            <CardProducts 
-              id={item.id}
-              title={item.title} 
-              description={item.description} 
-              price={item.price} 
-              image={item.image} 
-            />
-          </div>
+        {items.map(item => (
+          <CardProducts 
+            key={item.id} 
+            id={item.id}  
+            title={item.title}
+            description={item.description}
+            price={item.price}
+            image={item.image}
+          />
         ))}
       </section>
     </main>

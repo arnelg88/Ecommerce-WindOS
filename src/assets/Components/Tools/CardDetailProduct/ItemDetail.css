@@ -1,10 +1,12 @@
 
 
 .layoutContainer {
-    width: 100%;
-    
-    display: flex;
-    gap: 16px;
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
   }
   
   .grow1 { flex-grow: 1; }
