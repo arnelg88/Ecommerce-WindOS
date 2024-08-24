@@ -1,5 +1,8 @@
 # React + Vite
 
+Proyecto alojado en Netlify
+https://main--brilliant-froyo-cd25d2.netlify.app/
+
 WindOS
 
 WindOS es una tienda en línea para la compra de smartphones y notebooks, desarrollada con un enfoque en una experiencia de usuario moderna y fluida. El objetivo del proyecto es proporcionar una plataforma fácil de usar, estéticamente agradable y eficiente para los usuarios que buscan adquirir productos tecnológicos.
