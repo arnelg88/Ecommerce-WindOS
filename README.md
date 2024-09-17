@@ -1,7 +1,7 @@
 # React + Vite
 
 Proyecto alojado en Netlify
-https://main--brilliant-froyo-cd25d2.netlify.app/
+https://ecommercesprueba.netlify.app/
 
 WindOS
 
