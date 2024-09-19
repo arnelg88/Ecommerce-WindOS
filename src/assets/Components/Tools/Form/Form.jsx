@@ -84,7 +84,6 @@ export const Form = () => {
                         className="inputform"
                         value={formData.phoneNumber}
                         onChange={handleChange}
-                        required
                     />
                     <input
                         placeholder="Correo"
