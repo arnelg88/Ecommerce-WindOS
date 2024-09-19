@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import CardProducts from '../../Tools/CardProducts/CardProducts';
 import { db } from '../../Source/Data/firebaseConfig';
 import { collection, getDocs, query, where } from 'firebase/firestore';
+import { EmblaCarousel } from '../../Tools/Carrusel/Carrusel';
 
 const ItemListContainer = ({ category }) => {
   const [items, setItems] = useState([]);
@@ -33,7 +34,7 @@ const ItemListContainer = ({ category }) => {
 
   return (
     <main className="main-content">
-      <h1>Tienda</h1>
+   <EmblaCarousel />
       <section className='layout'>
         {items.map(item => (
           <CardProducts 

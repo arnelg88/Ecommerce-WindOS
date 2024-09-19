@@ -5,11 +5,11 @@ import { Brief } from "../../Tools/Brief/Brief";
 export const Checkout = () => {
   return (
     <section className="layoutContainer">
-      <div>
-        <Form />
-      </div>
       <div className="grow12">
         <Brief />
+      </div>
+      <div>
+        <Form />
       </div>
     </section>
   );
