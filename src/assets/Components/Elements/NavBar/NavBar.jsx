@@ -24,7 +24,7 @@ const NavBar = ({ setCategory }) => {
         <div className="header">
           <nav className="navbar">
             <Link to="/" className="logoName" onClick={() => handleCategorySelect('')}>
-              <img className="logo" alt="logo" src="https://previews.dropbox.com/p/thumb/ACY1t_PQNCSsVAg0VvQbsv4fNoF3AJuLy2n4JiZk9EHZRNnS54MUzUays-xugZuOtnJFd8hCNhZlUfsmN4c8Ow4AFZegWCQM7RUkBGO4Lw10XNMgOz3Ygjy4a1pYi6KF7XPJdGSHLSCjhczT9od9NzjfrZtWJpy5rPvcIiOCsgX33t3mXqlqO_zV_0tVj_3F4Kybvsze2yb2fAbZiSByBIWrnL6qoIYPYw4q2vrphmDFUbn09I5jERzybpEPoTPkoPCYHltykNIjptKI6vP90PR5P8XURjZLi7MLljvdUCVceBcGc5uinyLgpyj7yYpxLf1wc7B1g6SO6GHLu0IZ_a6W/p.png?is_prewarmed=true" />
+              <img className="logo" alt="logo" src="https://previews.dropbox.com/p/thumb/ACaQgcvX8rUMCetrc_CfTHbsjEi6VSkn1WFZ0_zPbK_F2wh3I9_K6S37UbpMyNPMbJ7c-1ONCCvBm0dTmRPT9cdK2AZt-uqcIrZS08ON5FteCkwJPaxXjoOE1ZJbI_1AB1FOXVHAFA6NrKp8g8SLoRE2iOtrT5Yei3FLl01PtFhtONAzQ3njbQ2SRKuN-_gG6_1rdO07cTmKF5xMVtv1_ru3rFCHmerceqMpUTyD7122TKaY7uJ-PzMJwlbYN9stLvj-bItNY_KjWLWRaNrcKWkPEI7tvSZALD2Ws6LJwjKgl5TaBp0MwJzUbelv82m-CJvvIY46RSCuR_XP5SCp1lyM/p.png?is_prewarmed=true" />
               <h3>WindOS</h3>
             </Link>
             <div className="navbar-center"></div>
