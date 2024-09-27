@@ -7,20 +7,26 @@ body{
     gap: 10px;
   }
   
-
+.main-content{
+  margin: 0;
+  padding: 0;
+}
   .layout {
     display: flex;
-    gap: 16px;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-evenly;
   }
 
+  .container_carrusel {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+  }
+  
   .layoutDetail {
     width: 100%;
-  
     display: flex;
     gap: 16px;
-  
     justify-content: center;
   }
 
@@ -30,3 +36,46 @@ body{
     border: solid rgb(168, 168, 168) 1px;
     border-radius: 15px;
   }
+.marginText{
+  margin: 0;
+}
+.containerDestacado{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px; 
+}
+.sectionDestacados{
+  margin: 40px 0 40px 20px;
+}
+
+.divCardDestacado{
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.slider {
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-mask {
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.slider-mask::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-content {
+  display: flex;
+  white-space: nowrap;
+}
+
+.cardDestacado {
+  flex: 0 0 auto; 
+  margin-right: 16px;
+}

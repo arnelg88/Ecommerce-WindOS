@@ -7,16 +7,11 @@ html, body {
 .outer-container {
     display: flex;
     justify-content: center;
- 
-    margin: 0;
   }
   
-  .centered-container {
-    width: 80%; 
-    max-width: 1200px; 
-
-    padding: 20px; 
-    background: #ffffff00;
+  .centered-container { 
+   width: 1229px;  
+    
   }
   .background-image {
     position: fixed;
@@ -29,3 +24,6 @@ html, body {
     z-index: -1;
     background-position: center;
   }
+
+
+  

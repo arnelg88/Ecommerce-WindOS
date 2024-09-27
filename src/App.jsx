@@ -5,6 +5,7 @@ import './App.css';
 import ItemListContainer from './assets/Components/Elements/Main/ItemListContainer';
 import ItemDetailContainer from './assets/Components/Elements/Main/ItemDetailContainer';
 import { Checkout } from './assets/Components/Elements/Checkout/Checkout';
+import Footer from './assets/Components/Elements/Footer/Footer';
 
 function App() {
   const [category, setCategory] = useState('');
@@ -23,6 +24,7 @@ function App() {
           </Routes>
         </div>
       </div>
+      <Footer/>
     </BrowserRouter>
   );
 }

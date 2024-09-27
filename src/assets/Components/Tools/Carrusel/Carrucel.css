@@ -1,19 +1,26 @@
+
 .embla {
-    overflow: hidden;
-  }
-  .embla__container {
-    display: flex;
-  }
-  .embla__slide {
-    flex: 0 0 40%;
-    min-width: 0;
-  }
-  
-  .img_banner{
-    width: 300px;
-    height: 100px;
-  }
-  .img_banner1{
-    width: 300px;
-    height: 100px;
-  }
+  overflow: hidden;
+  width:90%;
+  border-radius:7px;
+}
+
+.embla__container {
+  display: flex;
+  width: 100%; 
+
+}
+
+.embla__slide {
+  flex: 0 0 100%; 
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.img_banner {
+  width: 100%;
+  height: auto; 
+  object-fit: cover;
+}

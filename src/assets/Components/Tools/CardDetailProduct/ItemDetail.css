@@ -1,15 +1,27 @@
 
-
 .layoutContainer {
   width: 100%;
-
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(2, 1fr);
   gap: 8px;
+}
+
+.grow1 {
+  flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+  .layoutContainer {
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto auto; 
   }
-  
-  .grow1 { flex-grow: 1; }
+    .imgContainer{
+    height: 275px;
+    padding-top: 30px;
+  }
+}
+
 
   .imgContainer{
     height: 275px;
