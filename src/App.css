@@ -19,7 +19,7 @@ html, body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(https://previews.dropbox.com/p/thumb/ACY-7Z39Opgjvj-R60zxFldt4wUEtRuOWUgB1kR6AQcoocnkEm0svxVXiKXyDObZDVhzZDlSGeVsIN8L2jBLa81njBTeFB1TisU_tEzAWU6atQ_9Vr3-m-jaoriz0QMj0WLap-J1J0R9a4wcRXMq1fzX-MFKR1giVp5JSHJGQgcIf9_KYUhb7evDf28wslq9EBSELFUR5w11Uj5-BAXgqctksKWw1sX91I6iY4hVDfE_1f59qXFrZAjwRMDQEdIoSrJufnQfdeKY-LGTWBgrJM9Q4zJicDQAeFx5y7LygNzXKj-J-VAE6hLgXAWrOcg5ackE51DTYHCeL2_fl2-jtfM5/p.jpeg?is_prewarmed=true);
+    background: #ffff;
     background-size: cover;
     z-index: -1;
     background-position: center;
