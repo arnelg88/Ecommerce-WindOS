@@ -41,7 +41,7 @@ const ItemListContainer = ({ category }) => {
       <div className='container_carrusel'>   
         <EmblaCarousel />
       </div>
-      <div className='center'>
+      <div className='dividerSpace'>
         <Encabezados />
       </div>
       <section className='layout'>

@@ -6,8 +6,8 @@ import IcBaselineHouse from '../../Icons/IconHouse';
 import IcOutlineFavorite from '../../Icons/IconHeart';
 
 export const Encabezados = () => (
-<div className="section-divider center">
-  <BtnFilter className="spacefix"
+<div className="section-divider  spacefix">
+  <BtnFilter className=""
         IconComponent={<IcBaselineComputer />}
         label="Computadoras"
       />

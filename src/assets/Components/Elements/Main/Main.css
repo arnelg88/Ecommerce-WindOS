@@ -83,3 +83,10 @@ body{
 .encabezadosP{
   margin: 0;
 }
+
+.dividerSpace{
+  column-rule: 1px dotted rgb(53, 49, 50);
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+}

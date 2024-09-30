@@ -1,14 +1,10 @@
 .section-divider{
     column-rule: 1px dotted rgb(53, 49, 50);
+        display: flex;
+        gap: 10px;
+        
 }
 .linea{
 border: 1px solid #9b9898;
 height: 20px;
-}
-
-.Fix-margin{
-    margin-top: 10px;
-}
-.spacefix{
-    margin-right: 20px;
 }
