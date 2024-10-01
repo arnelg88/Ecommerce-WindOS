@@ -14,11 +14,13 @@ export const Form = () => {
         confirmEmail: ''
     });
 
+    // Manejar cambios en el formulario
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData(prevData => ({ ...prevData, [name]: value }));
     };
 
+    // Validar y enviar el formulario
     const handleSubmit = async (e) => {
         e.preventDefault();
 
@@ -53,65 +55,46 @@ export const Form = () => {
 
     return (
         <main className="containerform">
-            <div className="container">
-                <div className="heading">Termina tu compra..</div>
-                <form className="form" id="pedidoForm" onSubmit={handleSubmit}>
-                    <input
-                        placeholder="Nombre"
-                        id="name"
-                        name="name"
-                        type="text"
-                        className="inputform"
-                        value={formData.name}
-                        onChange={handleChange}
-                        required
-                    />
-                    <input
-                        placeholder="Apellido"
-                        id="lastName"
-                        name="lastName"
-                        type="text"
-                        className="inputform"
-                        value={formData.lastName}
-                        onChange={handleChange}
-                        required
-                    />
-                    <input
-                        placeholder="Número de teléfono"
-                        id="phoneNumber"
-                        name="phoneNumber"
-                        type="text"
-                        className="inputform"
-                        value={formData.phoneNumber}
-                        onChange={handleChange}
-                    />
-                    <input
-                        placeholder="Correo"
-                        id="email"
-                        name="email"
-                        type="email"
-                        className="inputform"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                    />
-                    <input
-                        placeholder="Confirmar Correo"
-                        id="confirmEmail"
-                        name="confirmEmail"
-                        type="email"
-                        className="inputform"
-                        value={formData.confirmEmail}
-                        onChange={handleChange}
-                        required
-                    />
-                    <input
-                        type="submit"
-                        className="login-button"
-                        value="Enviar"
-                    />
-                </form>
-            </div>
+             <div className="container">
+           <div class="modal">
+  <form class="form">
+    <div class="separator">
+      <div class="line"></div>
+      <p>Complete los datos para finalizar su compra</p>
+      <div class="line"></div>
+    </div>
+
+    <div class="credit-card-info--form">
+    <div class="split">
+        <div class="input_containerr">
+          <label class="input_label" for="name">Nombre</label>
+          <input id="name" class="input_field" type="text" placeholder="Escriba su nombre" required />
+        </div>
+        <div class="input_container">
+          <label class="input_label" for="lastName">Apellido</label>
+          <input id="cvv" class="input_field" type="text" placeholder="Escriba su apellido" required />
+        </div>
+      </div>
+      <div class="split">
+        <div class="input_containerr">
+          <label class="input_label" for="email">Correo</label>
+          <input id="email" class="input_field" type="email" placeholder="@correo.com" required />
+        </div>
+        <div class="input_container">
+          <label class="input_label" for="cvv">Verificar correo</label>
+          <input id="emailverifique" class="input_field" type="email" placeholder="@correo.com" required />
+        </div>
+      </div>
+
+      <div class="input_container">
+        <label class="input_label" for="cardholder-name">Numero de contacto</label>
+        <input id="cardholder-name" class="input_field" type="text" placeholder="+54 9 11 ####-####"/>
+      </div>
+    </div>
+    <button type="submit" class="purchase--btn">Realizar compra</button>
+  </form>
+</div>
+</div>
         </main>
     );
 };
