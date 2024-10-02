@@ -22,7 +22,7 @@ const NavBar = ({ setCategory }) => {
           <nav className="navbar">
           <div>
             <Link to="/" className="logoName" onClick={() => handleCategorySelect('')}>
-              <img className="logo" alt="logo" src="https://previews.dropbox.com/p/thumb/ACaQgcvX8rUMCetrc_CfTHbsjEi6VSkn1WFZ0_zPbK_F2wh3I9_K6S37UbpMyNPMbJ7c-1ONCCvBm0dTmRPT9cdK2AZt-uqcIrZS08ON5FteCkwJPaxXjoOE1ZJbI_1AB1FOXVHAFA6NrKp8g8SLoRE2iOtrT5Yei3FLl01PtFhtONAzQ3njbQ2SRKuN-_gG6_1rdO07cTmKF5xMVtv1_ru3rFCHmerceqMpUTyD7122TKaY7uJ-PzMJwlbYN9stLvj-bItNY_KjWLWRaNrcKWkPEI7tvSZALD2Ws6LJwjKgl5TaBp0MwJzUbelv82m-CJvvIY46RSCuR_XP5SCp1lyM/p.png?is_prewarmed=true" />
+              <img className="logo" alt="logo" src="src/assets/Components/Source/img/imagelogo.png" />
               <h3 className="titlelogo">Electronics</h3>
             </Link>
             </div>
@@ -35,6 +35,8 @@ const NavBar = ({ setCategory }) => {
                 <span>{totalItems}</span>
                 </Link>
               {/* <PositionedMenu setCategory={handleCategorySelect} /> */}
+              <a href="">Iniciar sesion                
+              </a>
             </div>
           </nav>
           <div className="center">

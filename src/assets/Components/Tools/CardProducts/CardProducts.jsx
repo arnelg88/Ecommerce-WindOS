@@ -19,7 +19,7 @@ export default function CardProducts ({ id, title, description, price, image }) 
         <div className="card-footer">
           <div className="card-price"><span>$</span>{price}</div>
           <Link to={`/item/${id}`} className="card-btn">
-            <ArrowRightIcon />
+            <a>Ver más</a>
           </Link>
         </div>
       </div>
