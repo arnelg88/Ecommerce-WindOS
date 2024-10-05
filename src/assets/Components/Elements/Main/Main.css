@@ -87,6 +87,9 @@ body{
 .dividerSpace{
   column-rule: 1px dotted rgb(53, 49, 50);
       display: flex;
+      width: 100%;
       gap: 20px;
-      justify-content: space-between;
+      justify-content: space-evenly;
+      margin: 20px  0px ;
+      padding: 8px;
 }

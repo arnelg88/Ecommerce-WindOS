@@ -5,7 +5,6 @@ import { collection, getDocs, query, where } from 'firebase/firestore';
 import { EmblaCarousel } from '../../Tools/Carrusel/Carrusel';
 import { Encabezados } from '../../Tools/Encabezados/Encabezados';
 import IcBaselineStarBorder from '../../Icons/IconStar';
-import { CardDestacado } from '../../Tools/CardDestacado/CardDestacado';
 import IcBaselineWorkspacePremium from '../../Icons/IconPremium';
 
 const ItemListContainer = ({ category }) => {
