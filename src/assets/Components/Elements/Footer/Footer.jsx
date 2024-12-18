@@ -30,7 +30,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div>
-                        <h5>NECXUS</h5>
+                        <h5>ELECTRONICS</h5>
                         <ul>
                             <li className='separationText'><a className='colorStyle'>¿Quiénes somos?</a></li>
                             <li className='separationText'><a className='colorStyle'>Contacto</a></li>
